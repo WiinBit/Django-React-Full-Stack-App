@@ -1,0 +1,10 @@
+.env
+db.sqlite3
+
+# IDE and editor files
+.vscode/
+.idea/
+
+
+# Temporary files and build artifacts
+tmp/

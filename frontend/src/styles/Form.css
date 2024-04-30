@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+  }
+
+  .form-container h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-container h1:hover {
+    transform: translate(1%, -2%) scale(1.05); /* Scale to 105% on hover */
+  }
+
+  .form-input:hover {
+    color: #0eca46d9;
+  }
+
+  .form-input::placeholder {
+    color: #03e9f4;
+    text-shadow: -2px -2px 0px #4c5facad, 2px 2px 0px rgba(0,0,0,.6);
+    background: transparent; 
+}
+
+.form-input:hover::placeholder {
+  color: #3aff61;
+  background: transparent; 
+}
+
+  .form-input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid  #03e9f4;
+    outline: none;
+    background: transparent;
+  }
+   
+  .form-input:focus ~ label,
+  .form-input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #09e338;
+    font-size: 12px;
+  }
+  
+  .form-input[type="text"]:focus ~ label {
+      color: #03e9f4;
+  }
+  .form-input[type="text"]:valid ~ label {
+    color: #03e9f4;
+  }
+  .form-input[type="password"]:focus ~ label
+  .form-input[type="password"]:valid ~ label {
+    font-size: 12px;
+    color: #03e9f4;
+    top: -20px;
+    left: 0;
+  }
+  
+  .form-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: transparent;
+    border: 2px solid #03e9f4;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-button:hover {
+    font-size: 18px;
+    background: #4bdf9c;
+    color:#072f1d;
+    box-shadow: 3px 3px 0px #18c4e28f, 3px 3px 0px rgba(2, 66, 45, 0.571);
+  }
+
+
+.primary-button {
+    padding: 10px 20px;
+    margin-right: 25px;
+}
+
+
+.secondary-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+
+.form-container:hover {
+  transform: translate(-50%, -50%) scale(1.05); /* Scale to 105% on hover */
+}
+
+

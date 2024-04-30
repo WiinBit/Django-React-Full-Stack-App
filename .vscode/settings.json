@@ -1,0 +1,23 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "django",
+            "database": "django_db",
+            "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "pg-4337de20-2484-4098-9a24-b4d4668d7b15-dbsynke2566883124-chore.j.aivencloud.com",
+            "port": 25864,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "database": "defaultdb",
+            "username": "avnadmin",
+            "name": "synke"
+        }
+    ]
+}
