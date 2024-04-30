@@ -27,6 +27,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
+      input: 'src/main.jsx', // Adjust the path as per your project structure
       external: dependencies
     }
   }
